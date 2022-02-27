@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<section class="showcase">
+    <header>
+        <h2 class="logo">CodeWithVed</h2>
+        <div class="toggle"></div>
+    </header>
+    <video src="1.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Learning Programming</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga magni doloremque aliquid doloribus expedita
+            eius id repudiandae voluptatum inventore distinctio.</p>
+        <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+<script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
